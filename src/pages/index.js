@@ -7,6 +7,9 @@ export default function Home({ data }) {
       <div>
         <h1>{title}</h1>
         <p>{description}</p>
+
+        <img src={data.cooperPic.publicURL} alt="Cooper the pomeranian" />
+        <img src={data.mayblePic.publicURL} alt="Mayble the pug" />
       </div>
     )
 }
@@ -18,6 +21,12 @@ export const pageQuery = graphql`
         description
         title
       }
+    }
+    cooperPic: file(base: { eq: "cooper.jpeg" }) {
+      publicURL
+    }
+    mayblePic: file(base: { eq: "mayble.jpeg" }) {
+      publicURL
     }
   }
 `
