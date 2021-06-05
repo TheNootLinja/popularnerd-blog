@@ -1,4 +1,4 @@
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import React from "react"
 
 export default function Home({ data }) {
@@ -7,6 +7,8 @@ export default function Home({ data }) {
       <div>
         <h1>{title}</h1>
         <p>{description}</p>
+
+        <Link to='/blog'>Check out my blog!</Link>
 
         <img src={data.cooperPic.publicURL} alt="Cooper the pomeranian" />
         <img src={data.mayblePic.publicURL} alt="Mayble the pug" />
