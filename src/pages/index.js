@@ -1,14 +1,25 @@
+import "../styles/index.css"
+
 import { graphql } from "gatsby"
 import React from "react"
 
+import Layout from "../components/Layout"
+import Dogs from "../components/Dogs"
+
 export default function Home({ data }) {
-  const { title, description } = data.site.siteMetadata;
-    return (
-      <div>
-        <h1>{title}</h1>
-        <p>{description}</p>
+  return (
+    <Layout>
+      <div class="main-content">
+        <h1>What's up!</h1>
+        <p>
+          This is a place for me to share my dev experience whether I am
+          learning a new framework, found a bug (and hopefully a solution), or I
+          just want to talk about a project I am working on.
+        </p>
       </div>
-    )
+      <Dogs data={data} />
+    </Layout>
+  )
 }
 
 export const pageQuery = graphql`
@@ -18,6 +29,12 @@ export const pageQuery = graphql`
         description
         title
       }
+    }
+    cooperPic: file(base: { eq: "cooper.jpeg" }) {
+      publicURL
+    }
+    mayblePic: file(base: { eq: "mayble.jpeg" }) {
+      publicURL
     }
   }
 `

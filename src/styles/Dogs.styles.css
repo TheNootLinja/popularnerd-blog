@@ -1,0 +1,11 @@
+.dogs {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.doggo-grid {
+  margin-top: 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}

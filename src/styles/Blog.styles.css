@@ -1,0 +1,19 @@
+.blog a {
+  text-decoration: none;
+  color: #444;
+}
+
+.blog-preview {
+  padding: 10px;
+  margin: 10px;
+}
+
+article {
+  transition: all 0.75s;
+}
+
+article:hover {
+  border-radius: 3px;
+  transition: all 0.75s;
+  box-shadow: 1px 1px 5px 4px rgba(0, 0, 0, 0.25);
+}

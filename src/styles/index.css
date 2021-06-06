@@ -1,0 +1,32 @@
+:root {
+  /* Colors */
+  --black: #1f254a;
+  /* Color Intentions */
+  --textColor: var(--black);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--textColor);
+}
+
+body * {
+  margin: 0;
+  padding: 0;
+}
+
+.main-content {
+  text-align: center;
+}
+
+.main-content h1 {
+  text-align: center;
+}
+
+/* Color Modes */
+.darkMode {
+  color: white;
+  background-color: var(--black);
+  color: white;
+}

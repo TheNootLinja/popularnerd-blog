@@ -1,0 +1,30 @@
+header {
+  background-color: var(--black);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  height: 46px;
+  padding: 0 10px 0 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+header a {
+  text-decoration: none;
+}
+
+nav {
+  height: 100%;
+  line-height: 46px;
+}
+
+header h2 {
+  line-height: 46px;
+}
+
+.nav-link {
+  color: white;
+  margin-right: 10px;
+}
