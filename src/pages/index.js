@@ -1,19 +1,24 @@
 import "../styles/index.css"
 
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 import React from "react"
 
+import Header from '../components/Header'
+
 export default function Home({ data }) {
-  const { title, description } = data.site.siteMetadata;
     return (
       <div>
-        <h1>{title}</h1>
-        <p>{description}</p>
-
-        <Link to='/blog'>Check out my blog!</Link>
-
-        <img src={data.cooperPic.publicURL} alt="Cooper the pomeranian" />
-        <img src={data.mayblePic.publicURL} alt="Mayble the pug" />
+        <Header/>
+        <div className='flex'>
+          <div className='dog-card'>
+            <h2>Cooper</h2>
+            <img src={data.cooperPic.publicURL} alt="" />
+          </div>
+          <div className='dog-card'>
+            <h2>Mayble</h2>
+            <img src={data.mayblePic.publicURL} alt="" />
+          </div>
+        </div>
       </div>
     )
 }
