@@ -2,3 +2,18 @@
   text-decoration: none;
   color: #444;
 }
+
+.blog-preview {
+  padding: 10px;
+}
+
+article {
+  background-color: transparent;
+  transition: all 0.75s;
+}
+
+article:hover {
+  background-color: #ccc;
+  border-radius: 3px;
+  transition: all 0.75s;
+}
