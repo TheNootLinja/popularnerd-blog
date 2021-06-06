@@ -3,23 +3,13 @@ import "../styles/index.css"
 import { graphql } from "gatsby"
 import React from "react"
 
-import Header from '../components/Header'
+import Layout from '../components/Layout'
 
 export default function Home({ data }) {
     return (
-      <div>
-        <Header/>
-        <div className='flex'>
-          <div className='dog-card'>
-            <h2>Cooper</h2>
-            <img src={data.cooperPic.publicURL} alt="" />
-          </div>
-          <div className='dog-card'>
-            <h2>Mayble</h2>
-            <img src={data.mayblePic.publicURL} alt="" />
-          </div>
-        </div>
-      </div>
+      <Layout>
+        <h1>Test</h1>
+      </Layout>
     )
 }
 

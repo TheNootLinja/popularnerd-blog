@@ -7,15 +7,3 @@ body * {
   margin: 0;
   padding: 0;
 }
-
-img {
-  height: 200px;
-}
-
-.dog-card {
-  margin: 0 5px 0 5px;
-}
-
-.flex {
-  display: inline-flex;
-}

@@ -5,11 +5,10 @@ header {
   justify-content: space-between;
   height: 46px;
   padding: 0 25px 0 25px;
-}
-
-a {
-  text-decoration: none;
-  /* color: white; */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 nav {
