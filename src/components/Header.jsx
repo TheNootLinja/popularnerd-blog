@@ -6,7 +6,9 @@ import { Link } from 'gatsby'
 export default function Header() {
     return (
         <header>
-            <h2>Popular Nerd Blog</h2>
+            <Link to='/' className='nav-link'>
+                <h2>Popular Nerd Blog</h2>
+            </Link>
             <nav>
                 <Link to='/' className='nav-link'>Home</Link>
                 <Link to='/blog' className='nav-link'>Blog</Link>
