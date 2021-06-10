@@ -8,6 +8,11 @@
   margin: 10px;
 }
 
+.blog-preview h2 {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
 article {
   transition: all 0.75s;
 }
